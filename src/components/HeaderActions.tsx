@@ -22,14 +22,22 @@ import {
   CommandList,
 } from "@/components/ui/command";
 
+/**
+ * Properties passed to the HeaderActions component.
+ */
 interface HeaderActionsProps {
+  /** Authenticated user entity or null when anonymous */
   user?: {
     id: string;
     email: string;
   } | null;
+  /** Active project identifier */
   projectId?: string;
 }
 
+/**
+ * Representation of a user UI project.
+ */
 interface Project {
   id: string;
   name: string;
@@ -37,6 +45,13 @@ interface Project {
   updatedAt: Date;
 }
 
+/**
+ * Application header action bar component managing project selection, authentication modals,
+ * and new design generation triggers.
+ *
+ * @param props - Header action properties.
+ * @returns {JSX.Element}
+ */
 export function HeaderActions({ user, projectId }: HeaderActionsProps) {
   const router = useRouter();
   const [authDialogOpen, setAuthDialogOpen] = useState(false);
