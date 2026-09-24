@@ -74,7 +74,3 @@ npm run lint
 | `JWT_SECRET` | Secret key for JWT session tokens | *(Required for authentication)* |
 | `DATABASE_URL` | SQLite database connection string | `file:./dev.db` |
 | `PORT` | Local web server port | `3000` |
-
-## License
-
-This project is licensed under the MIT License.
