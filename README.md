@@ -23,8 +23,8 @@ An AI-powered React component generator featuring real-time preview in a sandbox
 
 1. Clone the repository and navigate to the project root:
    ```bash
-   git clone https://github.com/AntonioHellin/uigen.git
-   cd uigen
+   git clone https://github.com/AntonioHellin/ai-ui-generator.git
+   cd ai-ui-generator
    ```
 
 2. Install dependencies:
